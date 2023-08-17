@@ -304,7 +304,7 @@
             $('#btnJoin').on('click', function () {
                 var email = $('#email').val();
                 $.ajax({
-                    url: 'https://unified.mlbranch.com/api/email_list',
+                    url: 'https://admin.unifiedtsn.com/api/email_list',
                     type: 'POST',
                     data: {
                         email: email,
@@ -327,7 +327,7 @@
                 var email = $('#email1').val();
                 var message = $('#comment').val();
                 $.ajax({
-                    url: 'https://unified.mlbranch.com/api/contact_us',
+                    url: 'https://admin.unifiedtsn.com/api/contact_us',
                     type: 'POST',
                     data: {
                         first_name: first_name,
