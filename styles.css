@@ -1080,7 +1080,7 @@ label {
   .key-features-container {
     width: 100%;
     display: flex;
-    overflow: auto;
+    overflow: hidden;
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
@@ -1120,7 +1120,7 @@ label {
   .key-features-tutorResources {
     color: rgba(11, 84, 158, 1);
     height: auto;
-    font-size: 24px;
+    font-size: 1.5rem;
     align-self: stretch;
     font-style: Bold;
     text-align: center;
@@ -1145,13 +1145,13 @@ label {
     align-self: stretch;
     text-align: center;
     line-height: 150%;
+    font-size: 1rem;
   }
   
   /* Key features, first row */
   .key-features-allFeatures {
     gap: 80px;
-    width: 1440px;
-    height: 415px;
+    width: 100%;
     display: flex;
     padding: 112px 64px;
     overflow: hidden;
@@ -1199,8 +1199,48 @@ label {
     align-items: center;
     flex-direction: column;
   }
-  .key-features-descrwiption {
-    font-style: normal;
-    font-size: 12px; 
-  }
 
+/* Media query for smaller screens (phones) */
+@media (max-width: 768px) {
+    .key-features-allFeatures {
+      flex-direction: column;
+      align-items: centre;
+    }
+  
+    .key-features-row,
+    .key-features-row1,
+    .key-features-row2 {
+      
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    
+    .key-features-column01,
+    .key-features-column02,
+    .key-features-column03,
+    .key-features-column06,
+    .key-features-column07,
+    .key-features-column08 {
+      width: auto;
+    }
+    
+    .key-features-SWDescription,
+    .key-features-PSBDescription,
+    .key-features-marketplaceDescription,
+    .key-features-businessDescription,
+    .key-features-tutorsChatDescription,
+    .key-features-text-tutorResources,
+    .key-features-marketplaceDescription,
+    .key-features-text60,
+    .key-features-text72,
+    .key-features-description {
+      white-space: normal;
+      white-space: pre-line;
+      font-size: 0.875rem; /* Adjust font size for smaller screens */
+    }
+    
+
+  }
+    
