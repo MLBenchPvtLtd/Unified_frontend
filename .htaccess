@@ -1,2 +1,4 @@
 RewriteEngine On
 RewriteRule ^privacy$ privacy.html [L]
+RewriteRule ^terms$ terms.html [L]
+RewriteRule ^contact$ contact.html [L]
